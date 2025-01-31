@@ -1,4 +1,23 @@
+/* ROOT STYLES */
 
+:root{
+    --blue: #64ABE3;
+    --teal: #13a69a;
+    --tan: #FDD8B5;
+    --white: #fff;
+    --dk-gray: #a9a9a9;
+}
+
+body{
+    margin: 0 auto;
+}
+
+/* HEADER STYLES */
+
+header{
+    background-image: linear-gradient(var(--tan), var(--white));
+    display: flex;
+}
 
 
 h5{
