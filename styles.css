@@ -1,25 +1,326 @@
 /* ROOT STYLES */
 
 :root{
-    --blue: #64ABE3;
+
+    --header-font: "Caveat Brush", sans-serif ;
+    --p-font: "Poppins", sans-serif;
+
+    --blue: #4cd1e2;
     --teal: #13a69a;
     --tan: #FDD8B5;
+    --dusty-tan: #f8a04d;
     --white: #fff;
     --dk-gray: #a9a9a9;
+    --brown: #c18043;
 }
 
 body{
     margin: 0 auto;
+    background-color: var(--tan);
 }
+
+/** Skip Content Styles **/
+
+#skip-link{
+    left: 600px;
+    position: absolute;
+    padding: 0 78px  0 78px;
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--blue);
+    font-weight: bold;
+    border-width:3rem;
+    border: solid var(--dusty-tan);
+    transform: translateY(-55px);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #skip-link:focus {
+    transform: translateY(25px); 
+  }
+  
+  #skip-link{
+    transition: transform 0.5s;
+  }
 
 /* HEADER STYLES */
 
 header{
-    background-image: linear-gradient(var(--tan), var(--white));
+    background-image: linear-gradient(var(--teal), var(--tan));
     display: flex;
+    justify-content:flex-start;
+    align-items: center; 
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 6rem;
+ 
+}
+h1{
+   font-family: var(--header-font);
+   font-size: 6rem; 
+   margin-bottom: 0;
+   
+}
+header p{
+    font-family: var(--p-font);
+    font-style: italic;
+    margin-top: 0;
+    font-size: 1.6rem;
 }
 
 
+nav {
+    display: flex;
+    font-family: var(--header-font);
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 35px;
+    
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 25px;
+   
+}
+a {
+    text-decoration: none;
+    color: var(--blue); 
+}
+a:hover{
+    color:var(--dusty-tan);
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+    
+}
+
+li {
+    padding: 0 1.7rem;
+    margin-top: 0.5em;
+    margin-left: 25px;
+    border-radius: 50px;
+    border: solid var(--white);
+    background-color: var(--white);
+    align-content: center;
+    
+}
+
 h5{
     visibility: hidden;
+}
+
+
+main{
+    background-color: var(--tan);
+}
+/* MAJORCA STYLES */
+
+ main #majorca{
+    margin-top: 17px;
+    display: flex;
+}
+#majorca-intro{
+    margin-top: 5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: var(--header-font);
+    padding-bottom: .25em; 
+    margin-bottom: 0;
+    padding-left: 0.75em;
+    letter-spacing: 0.1em;
+}
+
+#majorca p {
+    padding-left: 1.75em;
+    padding-right: 2em;
+    font-family: var(--p-font);
+    font-size: 1.7rem;
+}
+
+.majorca-images{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.majorca-images picture{
+    padding: 5px;
+    
+}
+
+/* PLAN TRIP STYLES */
+
+#plan-trip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(var(--tan), var(--white));
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-1{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-content: center;
+    
+    padding: 20px;
+}
+
+h3{
+    font-size: 3em;
+    font-family: "Caveat Brush", sans-serif;
+    padding: 3rem; 
+    text-transform: uppercase; 
+    text-decoration: dashed;
+    text-decoration-color: var(--blue);
+    letter-spacing: 0.1em;
+
+}
+
+h4{
+    font-size: 1.3em;
+    color: var(--white);
+    letter-spacing: 0.1em;
+}
+
+.container-1 a{
+    color: var(--dusty-tan);
+    font-size: 1.2rem;
+}
+.container-1 a:hover{
+    color: var(--blue);
+}
+
+.container-1 div{ 
+    max-width: 300px;
+    background-color: var(--teal);
+    padding: 30px;
+    margin: 20px;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid var(--dusty-tan);
+    text-transform: uppercase;
+    font-family: "Caveat Brush", sans-serif;
+}
+
+.container-1 svg{
+ background-color: var(--white);
+ border-radius: 10px;
+}
+footer{
+    background-image: linear-gradient(var(--tan), var(--teal));
+}
+
+/* TESTIMONIALS STYLES */
+
+#testimonies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(var(--white), var(--tan));
+   
+    padding-bottom: 50px;
+}
+
+.container-2{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 0.1em;
+    padding: 20px;
+}
+
+.container-2 div{ 
+    max-width: 300px;
+    background-color: var(--brown);
+    padding: 30px;
+    margin: 20px;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid var(--white);
+    text-transform: uppercase;
+    font-family: "Caveat Brush", sans-serif;
+}
+
+.container-2 img{
+ border-radius: 50%;
+ border: solid var(--white);
+ 
+}
+
+q{
+    letter-spacing: 0.1em;
+    color: var(--white);
+}
+
+/* MEDIA QUERIES 
+
+@media screen and (min-width: 1024px){
+    h1{
+        font-size: 7rem;
+    }
+    .h1-tagline{
+        padding-left: 3rem;
+    }
+
+    h2{
+        font-size: 5rem;
+    }
+   
+    header{
+        align-items: center;
+    
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 780px){
+    h1{
+        font-size: 4rem;
+    }
+    header img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    
+    h1{
+        font-size: 2rem;
+    }
+   
+    
 }
