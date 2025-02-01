@@ -309,8 +309,6 @@ q{
     align-content: center;
     text-align: center;
     font-weight: bold;
-    border-radius: 10px;
-    border: solid var(--white);
     text-transform: uppercase;
     font-family: "Caveat Brush", sans-serif;
 }
