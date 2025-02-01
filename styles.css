@@ -57,12 +57,17 @@ header{
     padding-bottom: 6rem;
  
 }
+
 h1{
    font-family: var(--header-font);
    font-size: 6rem; 
-   margin-bottom: 0;
-   
+   margin-bottom: 0; 
 }
+
+.h1-tagline{
+    padding-left: 3rem;
+}
+
 header p{
     font-family: var(--p-font);
     font-style: italic;
@@ -80,7 +85,7 @@ nav {
     text-transform: uppercase;
     align-items: center;
     justify-content: space-around;
-    padding-left: 35px;
+    padding-left: 25px;
     
 }
 
@@ -228,9 +233,6 @@ h4{
  background-color: var(--white);
  border-radius: 10px;
 }
-footer{
-    background-image: linear-gradient(var(--tan), var(--teal));
-}
 
 /* TESTIMONIALS STYLES */
 
@@ -276,6 +278,53 @@ footer{
 q{
     letter-spacing: 0.1em;
     color: var(--white);
+}
+
+/* ABOUT DESTINATION STYLES */
+
+#about-destination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--tan);
+   
+    padding-bottom: 50px;
+}
+
+.container-3{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 0.1em;
+    padding: 20px;
+}
+
+.container-3 div{ 
+    max-width: 300px;
+    background-color: var(--brown);
+    padding: 30px;
+    margin: 20px;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid var(--white);
+    text-transform: uppercase;
+    font-family: "Caveat Brush", sans-serif;
+}
+
+/* FOOTER STYLES */
+footer{
+
+    background-image: linear-gradient(var(--tan), var(--teal));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 /* MEDIA QUERIES 
