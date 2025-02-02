@@ -277,7 +277,7 @@ h4{
 /* ABOUT DESTINATION STYLES */
 
 #about-destination{
-    background-color: linear-gradient(var(--tan), var(--teal));
+    background-image: linear-gradient(var(--tan), var(--teal));
 }
 
 
