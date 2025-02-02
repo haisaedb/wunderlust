@@ -16,28 +16,30 @@
     --pale-yellow: #fcf17a;
 }
 
+/* BODY STYLES */
+
 body{
     margin: 0 auto;
     background-color: var(--tan);
 }
 
 
-/** Skip Content Styles **/
+/* SKIP CONTENT STYLES */
 
 #skip-link{
+    background-color: var(--dusty-tan);
+    color: var(--white);
+    font-family: var(--p-font); 
+    font-weight: bold;
+    font-size: 2rem;
     left: 600px;
     position: absolute;
     padding: 0 78px  0 78px;
     text-decoration: none;
-    background-color: var(--white);
-    color: var(--blue);
-    font-weight: bold;
-    border-width:3rem;
-    border: solid var(--dusty-tan);
+    border: solid var(--blue);
     transform: translateY(-55px);
-    font-size: 2rem;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    
   }
   
   #skip-link:focus {
@@ -45,7 +47,7 @@ body{
   }
   
   #skip-link{
-    transition: transform 0.5s;
+    transition: transform 0.3s;
   }
 
 /* HEADER STYLES */
@@ -81,13 +83,13 @@ header p{
 nav {
     display: flex;
     font-family: var(--header-font);
-    margin-top: 0;
     font-weight: bold;
     font-size: 1.5rem;
     text-transform: uppercase;
     align-items: center;
     justify-content: space-around;
-    padding-left: 25px;
+    padding-left: 25px; 
+    margin-top: 0;
     
 }
 
@@ -109,20 +111,18 @@ a:hover{
 }
 
 li {
+    border: solid var(--white);
+    background-color: var(--white);
     padding: 0 1.7rem;
     margin-top: 0.5em;
     margin-left: 25px;
     border-radius: 50px;
-    border: solid var(--white);
-    background-color: var(--white);
-    align-content: center;
-    
+    align-content: center;    
 }
 
 h5{
     visibility: hidden;
 }
-
 
 main{
     background-color: var(--tan);
@@ -135,7 +135,7 @@ main{
 }
 #majorca-intro{
     margin-top: 5rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -146,15 +146,13 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     font-family: var(--header-font);
-    padding-bottom: 0.25em; 
-    padding-left: 0.75em;
-    margin-bottom: 0;
+    padding: 0 0 0.5em 0.5em;
+    margin: 0;
     letter-spacing: 0.1em;
 }
 
 #majorca p {
-    padding-left: 1.75em;
-    padding-right: 2em;
+    padding: 2em;
     font-family: var(--p-font);
     font-size: 1.7rem;
 }
@@ -173,17 +171,21 @@ h2 {
 
 /* PLAN TRIP STYLES */
 
-#plan-trip{
+#plan-trip, #testimonies, #about-destination{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(var(--tan), var(--white));
-    margin-top: 50px;
+    justify-content: space-between; 
     padding-bottom: 50px;
 }
 
-.container-1{
+#plan-trip{
+    background-image: linear-gradient(var(--tan), var(--white));
+    margin-top: 50px;
+   
+}
+
+.container-1, .container-2{
     display: flex;
     flex-direction: row; 
     justify-content: center;
@@ -191,9 +193,9 @@ h2 {
     padding: 20px;
 }
 
-h3{
+ h3{
     font-size: 3em;
-    font-family: "Caveat Brush", sans-serif;
+    font-family: var(--header-font);
     padding: 3rem; 
     text-transform: uppercase; 
     border: 10px;
@@ -212,24 +214,23 @@ h4{
 .container-1 a{
     color: black;
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--p-font);
 }
 .container-1 a:hover{
     color: var(--teal);
 }
 
 .container-1 div{ 
-    max-width: 300px;
-    background-color: var(--brown);
-    padding: 30px;
-    margin: 20px;
-    align-content: center;
-    text-align: center;
-    font-weight: bold;
     border-radius: 10px;
     border: solid var(--teal);
+    background-color: var(--brown);
+    max-width: 260px;
+    padding: 25px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
     text-transform: uppercase;
-    font-family: "Caveat Brush", sans-serif;
+    font-family: var(--header-font);
 }
 
 .container-1 svg{
@@ -239,22 +240,8 @@ h4{
 
 /* TESTIMONIALS STYLES */
 
-#testimonies{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(var(--white), var(--tan));
-    padding-bottom: 50px;
-}
-
-.container-2{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-content: center;
-    letter-spacing: 0.1em;
-    padding: 20px;
+#testimonies{    
+    background-image: linear-gradient(var(--white), var(--tan)); 
 }
 
 .container-2 div{ 
@@ -265,10 +252,9 @@ h4{
     font-weight: bold;
     border-radius: 10px;
     border: solid var(--white);
-    align-content: center;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Caveat Brush", sans-serif;
+    font-family: var(--header-font);
 }
 
 .container-2 img{
@@ -280,25 +266,20 @@ h4{
 .container-2 q{
     letter-spacing: 0.1em;
     color: var(--white);
-    font-family: "Poppins", sans-serif;
+    font-family: var(--p-font);
     text-transform:none;
+}
+.container-2 p{
+    font-family: var(--p-font);
+    text-transform: capitalize;
 }
 
 /* ABOUT DESTINATION STYLES */
 
 #about-destination{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     background-color: linear-gradient(var(--tan), var(--teal));
-    padding-bottom: 50px;
 }
 
-#about-destination h3{
-    margin: 0;
-
-}
 
 .container-3{
     display: flex;
@@ -316,7 +297,7 @@ h4{
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: "Caveat Brush", sans-serif;
+    font-family: var(--header-font);
 }
 
 .container-3 p{
@@ -343,8 +324,8 @@ footer{
 
 #footer-top{
     display: flex;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     justify-content: center;
     align-items: baseline;
 
@@ -355,35 +336,35 @@ footer{
 }
 
 form{
+    background-color: var(--brown);
     border: 12px;
     border-radius: 28px;
-    background-color: var(--brown);
+    
 }
 
 label, legend{
-	padding-left: 0.5em;
     font-size: 1.6rem;
     font-family: var(--p-font);
     font-weight: bold;
+	padding-left: 0.5em;
+    
 }
 
 select{
+    border: 1px solid var(--dk-blue);
 	font-size: 1em;
-	padding: 0.25em;
-	border: 1px solid var(--dk-blue);
-	
+	padding: 0.25em;	
 }
 
 input{
+    border: 1px solid var(--dk-gray);
+    border-radius: 4px;
+    box-sizing: border-box;
     display: block;
     width: 100%;
     height: 2em;
     padding: 20px;
-    margin-bottom: 10px;
-    border: 1px solid var(--dk-gray);
-    border-radius: 4px;
-    box-sizing: border-box;
-   
+    margin-bottom: 10px;  
 }
 
 .required{
@@ -394,8 +375,7 @@ input{
 fieldset{
 	padding: 1rem;
 	display: flex;	
-    align-items: center;
-	
+    align-items: center;	
 }
 
 fieldset label{
@@ -411,6 +391,28 @@ fieldset label{
     width: 90%;
     height: 3em;
     margin-bottom: 1em;
+}
+
+input[type=submit]{
+    background-color: var(--teal);
+	color: var(--white);
+	font-family: var(--p-font);
+    font-size: 1.1rem;
+    font-weight: bold;
+	padding: 1rem;
+	max-width: 200px;
+    width: 75%;
+	height: auto;
+    margin-top: 100px;
+	margin-left: 300px;
+    margin-bottom:0; 
+}
+
+input[type="submit"]:hover{
+    box-shadow: 10px 5px 5px var(--dk-blue);
+}
+input[type="submit"]:focus{
+    box-shadow: 10px 5px 5px var(--dk-gray);
 }
 
 #footer-bottom{
@@ -443,126 +445,101 @@ a:visited, #footer-bottom a:visited{
 
 @media screen and (max-width: 780px){
 
-    #skip-link {
-        left: 20%; 
-        transform: translateX(-55%) translateY(-75px);
-        font-size: 1.5rem;
-        padding: 10px 40px;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 4rem; 
-    }
-
-    header p {
-        font-size: 1.4rem;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
     
-    }
+h1 { 
+    font-size: 4rem; 
+}
+h2 { 
+    font-size: 2.5rem; 
+}
+h3 { 
+    font-size: 2rem; 
+}
+h4, fieldset label { 
+    font-size: 1.5rem; 
+}
+p { font-size: 1rem; }
 
-    ul {
-        flex-direction: column;
-        padding: 0;
-        text-align: center;
-    }
 
-    li {
-        margin: 5px 0;
-        padding: 10px;
-        width: 100%;
-    }
-    main #majorca {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    h2 {
-        font-size: 2.5rem;   
-    }
+#skip-link {
+    left: 140px;
+    margin-top: 50px;
+    transform: translate(-55%, -75px);
+    font-size: 1.5rem;
+    padding: 10px 30px;
+}
 
-    h3{
-        font-size: 2rem;
-    }
-    h4{
-        font-size: 1.5rem;;
-    }
+header, nav, ul, #majorca, #footer-top, fieldset, 
+.container-2, .container-3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    p {
-        font-size: 1rem; 
-    }
-    #majorca p {
-        padding: 0 1em; 
-        font-size: 1.4rem;
-    }
-    .majorca-images {
-        flex-direction: column; 
-        
-    }
-     .container-1 {
-        display: flex;
-        flex-direction: column;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+header, #footer-top { 
+    padding: 10px; 
+}
+#footer-top { 
+    padding: 2rem 0; 
+}
 
-    .container-2, .container-3{
-        flex-direction: column; 
-        align-items: center;
-        padding: 15px;
-    }
+ul { 
+    padding: 0; 
+}
+li {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+}
 
-    .container-2 div, .container-3 div {
-        max-width: 100%; 
-        margin: 15px 0; 
-    }
+main #majorca, .majorca-images, .container-2, .container-3 {
+    flex-direction: column;
+}
 
-    .container-2 img {
-        width: 100px; 
-        height: 100px;
-    }
+#majorca p {
+    padding: 0 1em;
+    font-size: 1.4rem;
+}
 
-   
-    #footer-top {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-        padding: 2rem 0;
-    }
 
-  
-    form {
-        width: 90%; 
-        max-width: 400px;
-        padding: 15px;
-    }
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    fieldset {
-        flex-direction: column; 
-        align-items: center;
-        padding: 1rem;
-    }
+.container-2 div, .container-3 div {
+    margin: 15px 0;
+}
 
-    fieldset label {
-        text-align: center;
-        font-size: 1rem;
-    }
+.container-2 img {
+    width: 100px;
+    height: 100px;
+}
 
-    input {
-        width: 100%; 
-        padding: 15px;
-        font-size: 1em;
-    }
+form {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+}
+
+fieldset { 
+    padding: 1rem; 
+}
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+}
+
+input[type=submit]{
+    font-size: 0.75rem;
+	max-width: 200px;
+    width: 65%;
+	margin-left: 43px;
+}
+
 }
 
 
