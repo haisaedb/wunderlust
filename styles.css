@@ -214,6 +214,7 @@ header p{
     }
     #img-grid img{
         width: 465px;
+        overflow: hidden;
         padding-left: 0.5rem;
     }
 
