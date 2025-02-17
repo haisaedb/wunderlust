@@ -213,8 +213,7 @@ header p{
         justify-items: center;
     }
     #img-grid img{
-        width: 465px;
-        overflow: hidden;
+        width: 500px;
         padding-left: 0.5rem;
     }
 
