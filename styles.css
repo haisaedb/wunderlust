@@ -71,6 +71,8 @@ h4, p, q, small, nav, button, form{
     font-family: var(--p-fonts);
 }
 
+
+
 /* SKIP LINK & SCREEN ACCESSIBILITY STYLES*/
 #skip, .sr-only{
     width: 1px;
@@ -83,11 +85,110 @@ h4, p, q, small, nav, button, form{
 
 /* ---HEADER STYLE RULES--- */
 
+
+header{
+    width: 119vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    background-image: linear-gradient(var(--teal), white); 
     
+
+  
+
+}
+header img{
+    max-width: 300px;
+    width: 40%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0.7rem;
+
+
+}
+nav {
+    grid-column: 2; /* Menu in the second column */
+    grid-row: 1; /* Menu in the first row */
+    justify-self: end; /* Align the menu to the right */
+    
+    
+}
+#menu-toggle label {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: var(--yellow); 
+    color: var(--black); 
+    padding: 1.2rem 5rem;
+    position: absolute;
+    top: 25px;
+    right: -75px;
+    overflow: hidden;
+}
+
+#menu-toggle ul {
+    display: none; 
+    flex-direction: column;
+    background: var(--teal);
+    width: 210px;
+    justify-content: center;
+    position: absolute;
+    top: 62px; 
+    right: -75px; 
+    overflow: hidden;  
+}
+
+#menu-toggle ul li {
+    list-style: none;
+    text-align: center;
+    padding: 15px;
+}
+
+#menu-toggle ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+[type="checkbox"]{
+    visibility: hidden;
+}
+#menu-toggle label:hover{
+   background: var(--black) ;
+    color: var(--white); 
+}
+#menu-toggle label:hover + ul {
+    display: flex;
+    
+}
+
+h1{
+    font-size: 2.8em;
+    grid-column: 1/-1;
+    grid-row: 2;
+    padding-left: 2rem;
+    
+    
+}
+header p{
+    grid-column: 1/-1;
+    grid-row: 3;
+    padding-left: 2rem;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0;
+    padding-right: 1.5em;
+    padding-bottom: 1em; 
+}
 
 /* ---MAIN STYLES RULES--- */
     
     /* Intro Styles */
+
 
     /* Plan Trip Styles */
 
