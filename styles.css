@@ -71,7 +71,15 @@ h4, p, q, small, nav, button, form{
     font-family: var(--p-fonts);
 }
 
-/* SKIP LINK - ACCESSIBILITY */
+/* SKIP LINK & SCREEN ACCESSIBILITY STYLES*/
+#skip, .sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -19000;
+    overflow: hidden;   
+}
+
 
 /* ---HEADER STYLE RULES--- */
 
