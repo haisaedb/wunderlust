@@ -63,9 +63,30 @@ table {
 
 }
 
+/* FONT STYLES */
 h1, h2, h3{
     font-family: var(--header-font);
 }
 h4, p, q, small, nav, button, form{
     font-family: var(--p-fonts);
 }
+
+/* SKIP LINK - ACCESSIBILITY */
+
+/* ---HEADER STYLE RULES--- */
+
+    
+
+/* ---MAIN STYLES RULES--- */
+    
+    /* Intro Styles */
+
+    /* Plan Trip Styles */
+
+    /* Testimonies Styles */
+
+    /* About Styles */
+
+    /* Contact Styles */
+
+/* ---FOOTER STYLES RULES--- */
