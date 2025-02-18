@@ -381,3 +381,21 @@ header p{
     }
 
 /* ---FOOTER STYLES RULES--- */
+
+footer{
+    background-color: var(--lt-gray);
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0 auto;
+    color:var(--black);
+    padding: 3rem;
+
+}
+footer a{
+    text-decoration: none;
+    color: var(--black);
+}
+footer p, footer a{
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
