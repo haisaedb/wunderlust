@@ -228,6 +228,7 @@ header p{
     h3{
         padding-left: 2rem;
         padding-bottom: 0.7rem;
+        font-size: 1.3;
     }
 
     h4{
@@ -263,6 +264,41 @@ header p{
 
     /* Testimonies Styles */
 
+      
+    #testimonials h4,  
+    #testimonials p, 
+    #testimonials q{
+        font-weight: bold;
+    }
+    #testimonials h3{
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-bottom: 0.7rem;
+        font-size: 1.3em;
+    }
+    #testimonials h4 {
+        text-transform: uppercase;
+        font-size: 1.3em;
+        padding-top: 0em;     
+    }
+    
+    #testimonials p,  #testimonials q {
+        padding-bottom: 0.25em;
+    }
+
+    #testimonials section {
+        align-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 3rem;
+        max-width: 250px;
+    }
+
+#testimonials img{
+    padding: 0.7rem;
+}
     /* About Styles */
 
     /* Contact Styles */
