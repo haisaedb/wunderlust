@@ -188,8 +188,6 @@ header p{
     
     /* Intro Styles */
 
-    
-
     #intro h2{
         font-size: 1.5em;
         padding: 1rem 1rem 0.5rem 0;
@@ -211,13 +209,57 @@ header p{
         gap: 10px;
         align-items: center;
         justify-items: center;
+        padding-bottom: 1rem;
     }
     #img-grid img{
         width: 500px;
+        height: auto;
         padding-left: 0.5rem;
     }
 
     /* Plan Trip Styles */
+    #plan{
+        background-color: var(--yellow);
+        width: 500px;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    h3{
+        padding-left: 2rem;
+        padding-bottom: 0.7rem;
+    }
+
+    h4{
+        margin-top: 1rem;
+        text-transform: uppercase;
+        color: var(--black);
+        font-weight: bold;
+    }
+
+    #plan section{
+        background-color: var(--teal);
+        max-width: 290px;
+        border-radius: 10px;
+        border: solid var(--white);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+   
+    
+    }
+    #plan img{
+        width: 75%;
+        padding: 1rem;   
+    }
+
+    #plan img:last-child{
+        padding-bottom: 0.5rem;
+    }
+
 
     /* Testimonies Styles */
 
