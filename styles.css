@@ -482,11 +482,7 @@ body{
     #img-grid img {
         width: 85%;  
     }
-    #img-grid img:first-child,
-    #img-grid img:nth-child(2) {
-        width: 48%;
-           
-    }
+  
     #plan div{
         display: flex;
         flex-wrap: wrap;
